@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Shared
 //
-//  Created by Tamanna  on 9/9/22.
+//  Created by Monjur  on 9/9/22.
 //
 
 import SwiftUI
@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
-            .padding().foregroundColor(<#T##SwiftUI.Color?#>)
+            .padding().foregroundColor(Color.white).background(Color.accentColor).cornerRadius(10)
+        
     }
 }
 
