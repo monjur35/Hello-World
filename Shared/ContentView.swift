@@ -9,8 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding().foregroundColor(Color.white).background(Color.accentColor).cornerRadius(10)
+        VStack {
+            Text("Hello, world!")
+                .padding()
+                .foregroundColor(Color.white).background(Color.accentColor).cornerRadius(10)
+            Image("user_img")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Button(action: {}) {
+                Text("Click me!")
+            }
+            .padding()
+            .foregroundColor(.white)
+            .background(Color.red)
+            .cornerRadius(10)
+        }
         
     }
 }
