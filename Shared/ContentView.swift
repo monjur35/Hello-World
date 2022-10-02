@@ -31,7 +31,7 @@ struct ContentView: View {
                     
                     VStack
                     {
-                        Text("Player").foregroundColor(Color.white).padding()
+                        Text("CPU").foregroundColor(Color.white).padding()
                         Text("0").foregroundColor(Color.white)
                     }.padding()
                 }
