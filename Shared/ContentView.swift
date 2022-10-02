@@ -9,23 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-                .padding()
-                .foregroundColor(Color.white).background(Color.accentColor).cornerRadius(10)
-            Image("user_img")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            Button(action: {}) {
-                Text("Click me!")
-            }
-            .padding()
-            .foregroundColor(.white)
-            .background(Color.red)
-            .cornerRadius(10)
+        ZStack{
+            Image("background")
+            VStack {
+                Image("logo").padding()
+                
+                
+                HStack{
+                    Image("card3").padding()
+                    Image("card4").padding()
+                }.padding()
+                
+                Image("dealbutton").padding()
+                
+                HStack{
+                    VStack
+                    {
+                        Text("Player").foregroundColor(Color.white).padding()
+                        Text("0").foregroundColor(Color.white)
+                    }.padding()
+                    
+                    VStack
+                    {
+                        Text("Player").foregroundColor(Color.white).padding()
+                        Text("0").foregroundColor(Color.white)
+                    }.padding()
+                }
+            
+        }
         }
         
-    }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
