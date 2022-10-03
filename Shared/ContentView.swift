@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            Image("background")
+            Image("background").ignoresSafeArea()
             VStack {
                 Image("logo").padding()
                 
@@ -25,14 +25,14 @@ struct ContentView: View {
                 HStack{
                     VStack
                     {
-                        Text("Player").foregroundColor(Color.white).padding()
-                        Text("0").foregroundColor(Color.white)
+                        Text("Player").font(.headline).foregroundColor(Color.white).padding()
+                        Text("0").font(.largeTitle).foregroundColor(Color.white)
                     }.padding()
                     
                     VStack
                     {
-                        Text("CPU").foregroundColor(Color.white).padding()
-                        Text("0").foregroundColor(Color.white)
+                        Text("CPU").font(.headline).foregroundColor(Color.white).padding()
+                        Text("0").font(.largeTitle).foregroundColor(Color.white)
                     }.padding()
                 }
             
