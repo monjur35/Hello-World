@@ -12,32 +12,43 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             Image("background").ignoresSafeArea()
+            Spacer()
             VStack {
-                Image("logo").padding()
+                Spacer()
+                Image("logo")
+            
                 
-                
-                HStack{
-                    Image("card3").padding()
-                    Image("card4").padding()
-                }.padding()
-                
-                Image("dealbutton").padding()
+                Spacer()
                 
                 HStack{
-                    VStack
-                    {
-                        Text("Player").font(.headline).foregroundColor(Color.white).padding()
-                        Text("0").font(.largeTitle).foregroundColor(Color.white)
-                    }.padding()
-                    
-                    VStack
-                    {
-                        Text("CPU").font(.headline).foregroundColor(Color.white).padding()
-                        Text("0").font(.largeTitle).foregroundColor(Color.white)
-                    }.padding()
+                    Image("card3")
+                    Image("card4")
                 }
+                
+                Spacer()
+                
+                Image("dealbutton")
+                Spacer()
+                
+                HStack{
+                    Spacer()
+                    VStack
+                    {
+                        Text("Player").font(.headline).foregroundColor(Color.white)
+                        Text("0").font(.largeTitle).foregroundColor(Color.white)
+                    }
+                    Spacer()
+                    VStack
+                    {
+                        Text("CPU").font(.headline).foregroundColor(Color.white)
+                        Text("0").font(.largeTitle).foregroundColor(Color.white)
+                    }
+                    Spacer()
+                }
+                Spacer()
             
         }
+        
         }
         
 }
