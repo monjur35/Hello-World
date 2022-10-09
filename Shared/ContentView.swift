@@ -21,8 +21,11 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack{
+                    Spacer()
                     Image("card3")
+                    Spacer()
                     Image("card4")
+                    Spacer()
                 }
                 
                 Spacer()
@@ -30,17 +33,18 @@ struct ContentView: View {
                 Image("dealbutton")
                 Spacer()
                 
+                
                 HStack{
                     Spacer()
                     VStack
                     {
-                        Text("Player").font(.headline).foregroundColor(Color.white)
+                        Text("Player").font(.headline).foregroundColor(Color.white).padding()
                         Text("0").font(.largeTitle).foregroundColor(Color.white)
                     }
                     Spacer()
                     VStack
                     {
-                        Text("CPU").font(.headline).foregroundColor(Color.white)
+                        Text("CPU").font(.headline).foregroundColor(Color.white).padding()
                         Text("0").font(.largeTitle).foregroundColor(Color.white)
                     }
                     Spacer()
@@ -48,6 +52,7 @@ struct ContentView: View {
                 Spacer()
             
         }
+            
         
         }
         
